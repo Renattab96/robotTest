@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220823 16:01:30.593" rpa="false" schemaversion="3">
+<suite id="s1" name="verificarCatcha" source="C:\Users\Renatta Benitez\Documents\robotFramework\encontrar_catcha\verificarCatcha.robot">
+<test id="s1-t1" name="Cargar para login" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220823 16:01:31.312" level="INFO">Opening browser 'Chrome' to base url 'https://skillshare.com/login'.</msg>
+<status status="PASS" starttime="20220823 16:01:31.312" endtime="20220823 16:01:42.045"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="page-wrapper"]/div/div/div/form/div[2]/input</arg>
+<arg>renattabenitez96@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220823 16:01:42.047" level="INFO">Typing text 'renattabenitez96@gmail.com' into text field 'xpath://*[@id="page-wrapper"]/div/div/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20220823 16:01:42.046" endtime="20220823 16:01:42.731"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="page-wrapper"]/div/div/div/form/div[3]/input</arg>
+<arg>contrasena2020</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220823 16:01:42.733" level="INFO">Typing text 'contrasena2020' into text field 'xpath://*[@id="page-wrapper"]/div/div/div/form/div[3]/input'.</msg>
+<status status="PASS" starttime="20220823 16:01:42.732" endtime="20220823 16:01:42.917"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>name=rememberMe</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20220823 16:01:42.919" level="INFO">Selecting checkbox 'name=rememberMe'.</msg>
+<status status="PASS" starttime="20220823 16:01:42.918" endtime="20220823 16:01:43.187"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="page-wrapper"]/div/div/div/form/button[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220823 16:01:43.187" level="INFO">Clicking element 'xpath://*[@id="page-wrapper"]/div/div/div/form/button[4]'.</msg>
+<status status="PASS" starttime="20220823 16:01:43.187" endtime="20220823 16:01:43.649"/>
+</kw>
+<status status="PASS" starttime="20220823 16:01:31.312" endtime="20220823 16:01:43.650"/>
+</test>
+<status status="PASS" starttime="20220823 16:01:30.593" endtime="20220823 16:01:43.652"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="verificarCatcha">verificarCatcha</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
